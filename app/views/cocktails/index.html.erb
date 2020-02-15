@@ -1,0 +1,10 @@
+<div class='banner'>
+  <h1>My cocktails</h1>
+</div>
+<div class='card-container'>
+  <div class='card'>
+    <% @cocktails.each do |cocktail| %>
+      <%= link_to cocktail.name, cocktail_path(cocktail) %>
+    <% end %>
+  </div>
+</div>
